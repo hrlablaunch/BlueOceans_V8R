@@ -1,0 +1,267 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    border-bottom: 2px solid #A2C837;
+    position: sticky; /* Makes the header sticky */
+    top: 0; /* Sticks the header to the top of the page */
+    z-index: 1000; /* Ensures the header stays above other content */
+}
+
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: #ffffff;
+    color: #455c05;
+    font-size: 14px;
+}
+
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    max-width: 300px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #A2C837;
+}
+
+.hero {
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 200px 20px;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero-content button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-content button:hover {
+    background-color: #218838;
+    transform: translateY(-5px);
+}
+
+.about {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.about h2 {
+    color: #000000;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.about-content {
+    display: flex;
+    font-size: 18px;
+    color: #000000;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-content img {
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.services {
+    padding: 40px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.services h2 {
+    color: #000000;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    gap: 20px;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.service img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.service-text {
+    text-align: left;
+    font-size: 18px;
+    color: #000000;
+    width: 50%;
+}
+
+.service-text h3 {
+    font-size: 30px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.service-text p {
+    margin-bottom: 10px;
+}
+
+.service-text a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.service-text a:hover {
+    color: #000000;
+}
+
+.what-we-do {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-size: 18px;
+    color: #000000;
+}
+
+.what-we-do h2 {
+    color: #000000;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.approvals {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.approvals h2 {
+    color: #000000;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.approval-logos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.approval-logos img {
+    width: 250px;
+}
+
+.approval-logos img:hover {
+    transform: translateY(-10px);
+}
+
+.why-choose-us {
+    padding: 40px 20px;
+    background-color: #08549c;
+    text-align: center;
+}
+
+.why-choose-us h2 {
+    color: #ffffff;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.choose-us-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.choose-us-card {
+    background-color: #08549c;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    /*box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);*/
+    transition: transform 0.3s ease;
+}
+
+.choose-us-card img {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.choose-us-card h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.choose-us-card p {
+    color: #ffffff;
+    font-size: 16px;
+}
+/*
+.choose-us-card:hover {
+    transform: translateY(-10px);
+}
+*/
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
